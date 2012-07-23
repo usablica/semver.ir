@@ -1,0 +1,64 @@
+/*
+CSS for semver.ir
+@author Mathias Bynens - Afshin Mehrabani
+@link http://mathiasbynens.be/ - http://usabli.ca/
+*/
+
+@font-face {
+    font-family: "Nassim";
+    font-style: normal;
+    font-weight: normal;
+    src: local("☺"), url("../fonts/nassim-regular.woff") format("woff"), url("../fonts/nassim-regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Nassim";
+    font-style: normal;
+    font-weight: bold;
+    src: local("☺"), url("../fonts/nassim-bold.woff") format("woff"), url("../fonts/nassim-bold.ttf") format("truetype");
+}
+
+h1, h2, ol { margin: 0; padding: 0; }
+
+html { direction: rtl; font: 14.4px/1.5 Tahoma, arial, verdana; }
+body { width: 710px; margin: 0 auto; }
+
+h1, h2, h3 { font-family: Nassim, Arial, Verdana; text-align: center; font-weight: normal; }
+ h1 { font-size: 43px; margin: 1.1em 0 .7em; }
+ h2 { margin: 2.1em 0 .7em; font-size: 24px; }
+ h3 { text-align: right; font-size: 18px; margin-bottom: .6em; font-weight: bold; }
+
+a { color: #009; }
+a:hover, a:focus { color: #000; }
+ol { padding-right: 1.5em; }
+p { text-align: justify;margin: 0 0 1em; }
+
+@media print { 
+ body { width: 100%; }
+ h1, h2, h3 { font-weight: bold; }
+ a:after { content: ' <' attr(href) '>'; font-size: 90%; }
+}
+
+/* Nav */
+
+ol.nav {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+ol.nav li {
+  display: inline;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+ol.nav li a {
+  color: white;
+}
+.ltr-block {
+	direction: ltr;
+	text-align:left;
+	display:block;
+}
