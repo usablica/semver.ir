@@ -1,0 +1,40 @@
+/*
+	Product specific stylings
+*/
+.zConf {
+	position: fixed;
+	bottom: 100px;
+	left: 100px;
+	width: 273px;
+	height: 84px;
+	background: transparent url('../images/zconf-logo.png') center center no-repeat;
+	zoom: .5;
+
+    -webkit-transition: all 1s;
+    -moz-transition:    all 1s;
+    -ms-transition:     all 1s;
+    -o-transition:      all 1s;
+    transition:         all 1s;
+}
+.impress-on-introduction .zConf {
+	bottom: 190px;
+	left: 200px;
+	zoom: 1;
+}
+
+.slide {
+	vertical-align: middle;
+}
+
+.step span.sample {
+	display: block;
+	float: left;
+}
+
+.impress-on-semver-ir .step {
+	opacity: 0.3;
+}
+
+.impress-on-theMirror .step#introduction {
+	opacity: 0.6;
+}

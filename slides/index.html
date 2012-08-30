@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>نسخه‌بندی معنایی</title>
+    
+    <meta name="description" content="آیا تا‌به‌حال هنگام توسعه‌ی نرم‌افزار به موقعیتی برخورده‌اید که وابستگی‌های کُد شما به کتابخانه‌های دیگر زیاد و غیر قابل کنترل شده‌باشد؟ این موقعیت «جهنم وابستگی» نامیده میشود و ما میخواهیم روشی بهینه برای رهایی از آن تعریف کنیم." />
+    <meta name="author" content="Fardin Koochaki, Usabli.ca" />
+
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/specific.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+<div class="zConf"></div>
+
+<div class="fallback-message">
+    <p>مرورگر شما امکانات لازم برای impress.js را ندارد، بنابراین نسخه‌ی ساده‌تری از این صفحه در اختیار شما قرار گرفته است.</p>
+    <p>برای بهترین تجربه از آخرین نسخه‌ی مرورگر <b>Chrome</b>، <b>Safari</b> یا <b>Firefox</b> استفاده کنید.</p>
+</div>
+
+<div id="impress">
+
+    <div id="theMirror" class="step rtl" data-x="-1000" data-y="-3000" data-scale="4" data-rotate-x="-90" data-rotate-y="180"></div>
+    <div id="introduction" class="step rtl" data-x="-1000" data-y="-3000" data-scale="4" data-rotate-x="-90">
+        <h2>نسخه‌بندی معنایی</h2>
+        <h6>در نرم‌افزار‌ها</h6>
+        <div style="font-size:32px;margin:100px 0 150px 0;">فردین کوچکی</div>
+    </div>
+
+    <div id="haveYouEver" class="step slide alignCenter" data-x="-1000" data-y="-1500">
+        <div style="display:table;height: 100%;width:100%;">
+            <div style="display:table-cell;vertical-align:middle;">
+                آیا تا‌به‌حال هنگام توسعه‌ی نرم‌افزار به موقعیتی برخورده‌اید که وابستگی‌های کُد شما به کتابخانه‌های دیگر زیاد و غیر قابل کنترل شده‌باشد؟
+            </div>
+        </div>
+    </div>
+
+    <div id="whatDidYouDo" class="step slide alignCenter" data-x="0" data-y="-1500">
+        <div style="display:table;height: 100%;width:100%;">
+            <div style="display:table-cell;vertical-align:middle;">
+                برای رهایی از این موقعیت چه راهکاری اندیشیده‌اید؟
+            </div>
+        </div>
+    </div>
+
+    <div id="dependencyHell" class="step slide alignCenter" data-x="1000" data-y="-1500">
+        <div style="display:table;height: 100%;width:100%;">
+            <div style="display:table-cell;vertical-align:middle;">
+                این موقعیت "<b>جهنم وابستگی</b>" نامیده میشود و ما میخواهیم روشی بهینه برای رهایی از آن تعریف کنیم.
+            </div>
+        </div>
+    </div>
+
+    <div id="semanticVersioning" class="step alignCenter" data-x="0" data-y="0" data-scale="4">
+        <h2>نسخه‌بندی معنایی</h2>
+        <h4>X . Y . Z</h4>
+    </div>
+
+    <div id="who-n-why" class="step alignCenter" data-x="-2000" data-y="1000" data-scale="4">
+        <p>
+            <img src="images/tom.jpg" alt="Tom Preston-Werner" style="float:right;margin-left: 20px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);" />
+            <div style="font-size:32px;text-align:right;line-height: 42px;">
+                <span style="float:right;font-size:40px; color:gray; padding:-10px -10px 0 0;margin:0 5px;">"</span>
+                این یک ایده‌ی جدید یا انقلابی نیست. درواقع احتمالاً خود شما چیزی نزدیک به این را انجام میدهید. اما مشکل اینجاست که "نزدیک" به اندازه‌ی کافی خوب نیست.
+                <span style="font-size:40px; color:gray; padding:-10px -10px 0 0;margin:0 5px;">"</span>
+            </div>
+            <span class="ltr alignLeft" style="float:left; font-size:24px; color:gray;">Tom Preston-Werner<br>semver.org</span>
+        </p>
+    </div>
+
+    <div id="publicApi" class="step" data-x="2000" data-y="0" data-scale="4">
+        <h1>API عمومی</h1>
+    </div>
+
+    <div id="xyz" class="step" data-x="1000" data-y="2000" data-scale="3">
+        X برای تغییراتی که با نسخه‌های قبل تطابق ندارند<br>
+        Y برای تغییراتی که با نسخه‌های قبل سازگارند<br>
+        Z برای باگ‌فیکس
+    </div>
+
+    <div id="how" class="step" data-x="3000" data-y="1500" data-rotate="-30" data-scale="3">
+        <span style="font-size:72px;">چگونه؟!</span>
+    </div>
+
+    <div id="rule1" class="step" data-x="6000" data-y="-1000" data-scale="3">
+        نرم‌افزار‌هایی که از نسخه‌بندی معنایی استفاده میکنند باید یک API عمومی تعریف کنند. این API میتواند در خود کد و یا مؤکداً در مستندات موجود باشد. در هر صورت این توضیحات باید جامع و شامل باشند.
+    </div>
+
+    <div id="rule2" class="step" data-x="6000" data-y="300" data-scale="3">
+        یک شماره نسخه صحیح باید به‌ شکل X.Y.Z باشد که در آن Y ،X و Z اعداد صحیح غیر منفی هستند که<br>
+        X نسخه‌ی Major<br>
+        Y نسخه‌ی Minor و<br>
+        Z نسخه‌ی Patch می‌باشد.<br>
+        هر عنصر باید یک به یک و بصورت عددی افزایش پیدا کند. به عنوان مثال:
+        <span class="sample ltr alignLeft">1.9.0 -> 1.10.0 -> 1.11.0</span>
+    </div>
+
+    <div id="rule3" class="step" data-x="6000" data-y="1700" data-scale="3">
+        هنگامی که شماره نسخه Major یک واحد افزایش می‌یابد، نسخه‌های Minor و Patch باید صفر شوند. همچنین زمانی که شماره نسخه Minor افزایش می‌یابد، نسخه‌ی Patch باید صفر شود. برای مثال:
+        <span class="sample ltr alignLeft">1.1.3 -> 2.0.0 , 2.1.7 -> 2.2.0</span>
+    </div>
+
+    <div id="rule4" class="step" data-x="6000" data-y="2800" data-scale="3">
+        پس از انتشار یک نسخه محتویات آن به هیچ‌وجه نباید تغییر کند. هرگونه تغییر باید به عنوان یک نسخه جدید منتشر شود.
+    </div>
+
+    <div id="rule5" class="step" data-x="6000" data-y="3700" data-scale="3">
+        نسخه‌هایی با شماره Major صفر (0.Y.Z)، نسخه‌های درحال توسعه هستند. هرگونه تغییری ممکن است در هر زمان اتفاق بیوفتد؛ پس API عمومی نباید پایدار فرض شود.
+    </div>
+
+    <div id="rule6" class="step" data-x="3000" data-y="3700" data-scale="3">
+        نسخه‌ی 1.0.0، API عمومی را تعریف میکند. به اینصورت که افزایش شماره‌های نسخه از این پس به این API و چگونگی تغییر آن بستگی دارد.
+    </div>
+
+    <div id="rule7" class="step" data-x="0" data-y="3700" data-scale="3">
+        شماره نسخه Patch یا Z (x.y.Z به شرطی که x > 0) باید در صورتی که باگ‌فیکس‌های مطابق با نسخه قبل ارائه شدند افزایش یابد. باگ‌فیکس به تغییراتی داخلی اتلاق میشود که رفتار نادرست برنامه را اصلاح میکند.
+    </div>
+
+    <div id="rule8" class="step" data-x="-3000" data-y="3700" data-scale="3">
+        درصورتی که کاربرد جدیدی که با نسخه‌های قبلی سازگاری دارد توسط API ارائه شود و یا هر یک از کاربردهای قبلی حذف شوند ، باید شماره نسخه Minor یا Y (x.Y.z به شرطی که x > 0) افزایش یابد. همچنین در صورتی که کاربرد‌های جدید خاص یا ارتقاع در کد خصوصی ارائه شده باید میتوان این شماره را افزایش داد. تغییرات مذکور میتواند شامل تغییرات مربوط به نسخه‌ی Patch نیز باشد. شماره نسخه Patch باید پس از افزایش Minor صفر شود.
+    </div>
+
+    <div id="rule9" class="step" data-x="6000" data-y="5000" data-scale="3">
+        درصورت ارائه‌ی تغییراتی که با نسخه‌های قبل سازگاری ندارند شماره نسخه‌ی Major یا X (X.y.z به شرطی که X > 0) باید افزایش یابد. تغییرات مذکور میتواند شامل تغییرات مربوط به نسخه‌ی Minor و Patch نیز باشد. شماره‌های Patch و Minor نسخه باید پس از افزایش شماره‌ی Major صفر شوند.
+    </div>
+
+    <div id="rule10" class="step" data-x="3000" data-y="5000" data-scale="3">
+        میتوان یک نسخه‌ی pre-release (پیش از انتشار) را با افزودن خط تیره (-) و نمایه‌هایی که با نقطه از هم جدا شده‌اند، دقیقاً بعد از شماره نسخه Patch معرفی کرد. نمایه‌ها باید محدود به کارکتر‌ها و اعداد ASCII و خط تیره (-) باشند. نسخه‌های pre-release کاربردی هستند اما نسبت به شماره نسخه‌ی اصلی از اهمیت کمتری برخوردارند. نمونه‌ها:
+        <span class="sample ltr alignLeft">1.1.3 -> 2.0.0 , 2.1.7 -> 2.2.0</span>
+    </div>
+
+    <div id="rule11" class="step" data-x="0" data-y="5200" data-scale="3">
+        میتوان یک نسخه‌ی build را با افزودن علامت جمع (+) و مجموعه‌ای از نمایه‌هایی که با نقطه از هم جدا شده‌اند، دقیقاً بعد از شماره نسخه‌ی Patch یا نسخه‌ی pre-release معرفی کرد. نمایه‌ها باید محدود به کارکتر‌ها و اعداد ASCII و خط تیره (-) باشند. نسخه‌های build کاربردی هستند و نسبت به شماره نسخه‌ی اصلی از اهمیت بیشتری برخوردارند.‍ نمونه‌ها:
+        <span class="sample ltr alignLeft">1.0.0+build.1, 1.3.7+build.11.e0f985a</span>
+    </div>
+
+    <div id="rule12-1" class="step" data-x="-3000" data-y="5500" data-scale="3">
+        اهمیت نسخه‌ها باید با جدا کردن شماره نسخه به بخش‌های Major,  Minor, Patch, pre-release و build به ترتیب مذکور. نسخه‌های Major, Minor و Patch همیشه به روش عددی مقایسه میشوند. اهمیت نسخه‌های pre-release و build باید با مقایسه‌ی هر بخش جدا شده توسط نقطه به روش زیر تعیین شود:
+    </div>
+
+    <div id="rule12-2" class="step" data-x="-3000" data-y="7500" data-scale="3">
+        نمایه‌هایی که فقط از اعداد تشکیل شده‌اند به روش عددی و نمایه‌هایی که از حروف و خط تیره (-) تشکیل شده‌اند به ترتیب لغوی مقایسه میشوند. نمایه‌های عددی همیشه از اهمیت کمتری نسبت به نمایه‌های غیر عددی برخوردارند. نمونه‌ها:
+        <span class="sample ltr alignLeft">1.0.0-alpha < 1.0.0-alpha.1 < 1.0.0-beta.2 < 1.0.0-beta.11 < 1.0.0-rc.1 < 1.0.0-rc.1+build.1 < 1.0.0 < 1.0.0+0.3.7 < 1.3.7+build < 1.3.7+build.2.b8f12d7 < 1.3.7+build.11.e0f985a</span>
+    </div>
+
+    <div id="semver-ir" class="step" data-x="0" data-y="7500" data-scale="10">
+        <h1>semver.ir</h1>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="2500" data-rotate-y="0" data-rotate-x="-45" data-scale="15">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>از کلید spacebar کلید های جهت برای ناوبری استفاده کنید</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>برای ناوبری سمت چپ یا راست را لمس کنید</p>";
+    }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
